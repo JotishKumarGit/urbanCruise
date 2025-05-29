@@ -1,0 +1,157 @@
+
+/* Vichiles sections  */
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* For Budget sections contact banner  */
+.contact-banner {
+  background-color: #f6cd72;
+  border-radius: 10px;
+  padding: 20px 30px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  font-family: Arial, sans-serif;
+  margin: 20px auto;
+  max-width: 1300px;
+}
+
+.small-text {
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+  text-align: left;
+}
+
+.main-text {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+  margin-top: 5px;
+  text-align: left;
+}
+
+.contact-button {
+  background-color: #7ad800;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 10px 20px;
+  box-shadow: 0 0 0 2px white;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: #6ac400;
+  color: white;
+}
+
+
+/* Wedding travel */
+.vehicle-tag {
+  background-color: #ffd58f; /* light orange box */
+  border-radius: 6px;
+}
+
+.text-orange {
+  color: #f78b00; /* bold orange text */
+}
+
+
+/* Wedding Tabs /* Center the tabs container */
+.custom-tabs {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Override Bootstrap nav-tabs style */
+.custom-tabs .nav-tabs {
+    border-bottom: none;
+}
+
+/* Each tab item */
+.custom-tabs .nav-item {
+    flex: none;
+}
+
+/* Base style for each tab */
+.custom-tabs .nav-link {
+    background-color: black;
+    color: white;
+    border: none;
+    border-right: 2px solid white; /* White border to the right */
+    border-radius: 0;
+    text-align: center;
+    font-weight: 500;
+    padding: 10px 20px;
+    min-width: 100px; /* Adjust size as needed */
+}
+
+/* Remove right border from last tab */
+.custom-tabs .nav-link:last-child {
+    border-right: none;
+}
+
+/* Active tab style */
+.custom-tabs .nav-link.active {
+    background-color: #ffb300;
+    color: white;
+}
+
+/* Left-rounded corner for first active tab */
+.custom-tabs .nav-link:nth-child(1).active {
+    border-radius: 50px 0 0 50px;
+}
+
+/* Right-rounded corner for last active tab */
+.custom-tabs .nav-link:nth-child(4).active {
+    border-radius: 0 50px 50px 0;
+}
+
+    @media (max-width: 768px) {
+        .nav-tabs {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .nav-tabs .nav-item {
+            width: 100%;
+        }
+
+        .nav-tabs .nav-link {
+          margin: 5px;
+            border-radius: 25px !important;
+            width: 100%;
+        }
+    }
+
+/* This is for VehicleCard  sections */
+.vehicle-card {
+  border: 2px solid #8ddc27;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.vehicle-logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  height: 40px;
+  z-index: 2;
+  background: white;
+  padding: 2px;
+  border-radius: 4px;
+}
+.vehicle-description {
+  font-size: 16px;               /* Match font size from image */
+  font-weight: 400;              /* Regular weight */
+  color: #5f5f5f;                /* Bootstrap's muted gray */
+  line-height: 1.6;              /* Comfortable line spacing */
+  font-family: 'Roboto', sans-serif;  /* Optional: match the font if used */
+  margin-bottom: 0;
+  white-space: pre-line;         /* Preserves line breaks if passed in description */
+}
+
+
