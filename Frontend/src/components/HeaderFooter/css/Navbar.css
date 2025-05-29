@@ -5,3 +5,43 @@
 .dropdown-item{
     color: white;
 }
+
+/* This is for footer */
+.footer {
+  background-color: #222;
+  font-size: 15px;
+}
+
+.footer-logo {
+  width: 150px;
+}
+
+.footer-description {
+  margin-top: 15px;
+  color: #ccc;
+}
+
+.footer-heading {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.footer ul li {
+  margin-bottom: 8px;
+  color: #ddd;
+  cursor: pointer;
+}
+
+.footer ul li:hover {
+  text-decoration: underline;
+}
+
+.social-icon {
+  font-size: 22px;
+  color: #ffb400;
+  transition: transform 0.2s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+}

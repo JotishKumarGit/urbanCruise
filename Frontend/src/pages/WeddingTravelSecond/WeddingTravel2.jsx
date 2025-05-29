@@ -7,7 +7,7 @@ import WeddingTabs2 from './WeddingTabs2';
 const WeddingTravel2 = () => {
 
     return (
-        <div className="container-fluid py-3" style={{ backgroundColor: '#FDEBD0' }}>
+        <div className="container-fluid py-3" style={{ backgroundColor: '#fff' }}>
             <div className="container mt-5" >
                 <div className="text-center vehicle-banner py-5">
                     <div className="d-inline-block px-3 py-2 vehicle-tag mb-3">
@@ -19,9 +19,20 @@ const WeddingTravel2 = () => {
                         <WeddingTabs2 />
                     </div>
                 </div>
+                {/* faq */}
+                <div className="contact-banner d-flex justify-content-between align-items-center">
+                    <div>
+                        <div className="small-text">DO YOU HAVE QUESTIONS?</div>
+                        <div className="main-text">
+                            VISIT OUR FAQ PAGE FOR CLARIFICATION OF YOUR QUERIES
+                        </div>
+                    </div>
+                    <a href="#contact" className="btn contact-button">
+                        FAQ
+                    </a>
+                </div>
             </div>
         </div>
-
     );
 };
 

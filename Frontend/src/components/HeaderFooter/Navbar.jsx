@@ -13,6 +13,7 @@ function Navbar() {
                 <a className="navbar-brand" href="#"><img src={logo} alt="Logo" height="40" /></a>
                 <button className="btn btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileSidebar" aria-controls="mobileSidebar"><FaBars /></button>
             </nav>
+
             {/* Desktop Navbar */}
             <nav className="navbar navbar-expand-lg d-none d-lg-flex" style={{ backgroundColor: "#72d100" }}>
                 <div className="container-fluid d-flex justify-content-center">

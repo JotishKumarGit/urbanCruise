@@ -27,7 +27,7 @@ function AboutUs() {
                     {/* Left Content */}
                     <div className="col-md-6">
                         <div className="mb-3">
-                            <span className="px-3 py-1 bg-warning text-white fw-bold rounded">ABOUT</span>
+                            <span className="px-3 py-1 text-warning fs-3 rounded" style={{backgroundColor:'#FFE6AC'}}>ABOUT</span>
                         </div>
                         <h2 className="fw-bold mb-3">URBAN CRUISE</h2>
                         <p style={{ color: '#5c5c5c', fontWeight: '400' }}>

@@ -20,33 +20,33 @@ function WeddingTabs2() {
                         <button className="nav-link active" id="wedding-tab" data-bs-toggle="tab" data-bs-target="#wedding" type="button" role="tab" aria-controls="wedding" aria-selected="true" style={{ borderRadius: '50px 0 0 50px' }}>
                             WEDDING TRAVEL
                         </button>
-                    </li>
+                    </li><p style={{height:'10px',border:'0.5px solid white'}}></p>
                     <li className="nav-item" role="presentation">
                         <button className="nav-link" id="corporate-tab" data-bs-toggle="tab" data-bs-target="#corporate" type="button" role="tab" aria-controls="corporate" aria-selected="false">
                             CORPORATE TRAVEL
                         </button>
-                    </li>
+                    </li><p style={{height:'10px',border:'0.5px solid white'}}></p>
                     <li className="nav-item" role="presentation">
                         <button className="nav-link" id="vacation-tab" data-bs-toggle="tab" data-bs-target="#vacation" type="button" role="tab" aria-controls="vacation" aria-selected="false">
                             VACATIONS
                         </button>
-                    </li>
+                    </li><p style={{height:'10px',border:'0.5px solid white'}}></p>
                     <li className="nav-item" role="presentation">
                         <button className="nav-link" id="local-tab" data-bs-toggle="tab" data-bs-target="#local" type="button" role="tab" aria-controls="local" aria-selected="false">
                             LOCAL TRAVEL
                         </button>
-                    </li>
+                    </li><p style={{height:'10px',border:'0.5px solid white'}}></p>
                     <li className="nav-item" role="presentation">
                         <button className="nav-link" id="oneway-tab" data-bs-toggle="tab" data-bs-target="#oneway" type="button" role="tab" aria-controls="oneway" aria-selected="false" style={{ borderRadius: '0 50px 50px 0' }}>
                             ONE WAY
                         </button>
-                    </li>
+                    </li><p style={{height:'10px',border:'0.5px solid white'}}></p>
                 </ul>
             </div>
 
             <div className="tab-content mt-3" id="travelTabsContent">
                 {/* WEDDING */}
-                <div className="tab-pane fade show active" id="wedding" role="tabpanel" aria-labelledby="wedding-tab">
+                <div className="tab-pane fade show active " id="wedding" role="tabpanel" aria-labelledby="wedding-tab">
                     <div className="container mt-5">
                         <div className="row">
                             <div className="col-md-6">
@@ -75,7 +75,7 @@ function WeddingTabs2() {
 
                 {/* VACATIONS */}
                 <div className="tab-pane fade" id="vacation" role="tabpanel" aria-labelledby="vacation-tab">
-                    <div className="container mt-5">
+                    <div className="container  mt-5">
                         <div className="row">
                             <div className="col-md-6">
                                 <VehicleCard2 image={vacation1} title="Vacation / Holiday Tours" title2="Curated Sightseeing Tours across 7 cities in India." description="Holiday Tours – Sightseeing tours for one day Picnics, Weekend Holidays, Weekend Trips, Long Vacations, bachelor parties, All Ladies Tour etc.." description2="Amusement Parks & Cruise – You can also book a bus for Day trip to Amusement Parks, to Cruise Trips etc." seat="SEAT : 4 to 50 seater " fare="FARE : Starts from Rs. 14/Km" />
@@ -89,7 +89,7 @@ function WeddingTabs2() {
 
                 {/* LOCAL */}
                 <div className="tab-pane fade" id="local" role="tabpanel" aria-labelledby="local-tab">
-                    <div className="container mt-5">
+                    <div className="container  mt-5">
                         <div className="row">
                             <div className="col-md-6">
                                 <VehicleCard2 image={localTravel1} title="Airport & Railway Station Transfer " title2="Want to Catch Flight on Time! Try our airport Transfers" description="Reliable – Most Reliable Service for catching Flights & Trains on time." description2="No Last Minute Cancellation – Once vehicle is Confirmed, there will not be any cancellation at the last minute." seat="SEAT : 4 to 7 seater " fare="FARE : Starts from Rs. 12/Km" />
@@ -102,9 +102,9 @@ function WeddingTabs2() {
                 </div>
 
                 {/* ONE WAY */}
-                <div className="tab-pane fade" id="oneway" role="tabpanel" aria-labelledby="oneway-tab">
+                <div className="tab-pane fade " id="oneway" role="tabpanel" aria-labelledby="oneway-tab">
                     <div className="container mt-5">
-                        <div className="row">
+                        <div className="row ">
                             <div className="col-md-6">
                                 <VehicleCard2 image={oneWay1} title="Car/SUV for One Way Travel" description="Mumbai to Many Cities – One Way Travel from Mumbai to many Cities." description2="Low Cost – Enjoy our One Way Taxi Service at Affordable Fares." seat="SEAT : 4 to 7 seater " fare="FARE : Starts from Rs. 12/Km" />
                             </div>

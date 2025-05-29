@@ -10,7 +10,7 @@ function HowItWorks() {
         <div className="steps-section pt-5 pb-3" style={{ backgroundColor: "#E6FCD2" }}>
             <div className="container">
                 <div className="text-center mb-5">
-                    <span className="badge bg-warning text-dark fs-5 mb-2 px-3 py-2">HOW IT WORKS</span>
+                    <span className="badge text-dark fs-5 mb-2 px-3 py-2" style={{backgroundColor:'#ffd58f'}}>HOW IT WORKS</span>
                     <h2 className="fw-bold text-dark">BOOK VEHICLE IN 3 STEPS</h2>
                 </div>
                 <div className="row g-4 text-center py-4">

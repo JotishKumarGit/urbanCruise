@@ -6,6 +6,10 @@ import HowitWork from './HowitWork';
 import Budget from './Budget';
 import WeddingTravel from './WeddingTravel/WeddingTravel';
 import WeddingTravel2 from './WeddingTravelSecond/WeddingTravel2';
+import WhyUrbanCruise from './WhyUrbanCruise';
+import Testimonials from './Testimonials';
+import Faq from './Faq';
+import OnlineBooking from './OnlineBooking';
 
 
 function MainPage() {
@@ -18,6 +22,10 @@ function MainPage() {
             <Budget />
             <WeddingTravel />
             <WeddingTravel2 />
+            <WhyUrbanCruise />
+            <Testimonials />
+            <Faq />
+            <OnlineBooking />
         </>
     )
 }

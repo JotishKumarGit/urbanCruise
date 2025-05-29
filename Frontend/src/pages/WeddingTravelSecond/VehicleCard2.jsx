@@ -1,17 +1,19 @@
 import React from "react";
 
+function VehicleCard2({ image, title, title2, description, description2, seat, fare }) {
 
-function VehicleCard2({ image, title,title2, description,description2, seat, fare }) {
+
     return (
-        <div className="card vehicle-card p-2 position-relative overflow-visible">
+
+        <div className="card h-100 vehicle-card p-2 mb-5 position-relative overflow-visible" style={{ backgroundColor: 'white' }}>
             <div className="position-relative">
                 <img src={image} alt="vehicle" className="card-img-top" />
             </div>
             <div className="card-body pb-5"> {/* Add bottom padding so content doesn't overlap with buttons */}
                 <h5 className="fw-bold">{title}</h5>
-                <h5 className="fw-bold" style={{color:'#7D7D7D'}}>{title2}</h5>
-                <p className="vehicle-description">{description}</p>
-                <ul>
+                <h5 className="fw-bold" style={{ color: '#7D7D7D' }}>{title2}</h5>
+                <p className="vehicle-description py-2">{description}</p>
+                <ul className="py-2">
                     <li>{description2}</li>
                 </ul>
                 <hr />
