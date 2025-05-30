@@ -6,7 +6,7 @@ import '../HeaderFooter/css/Navbar.css';
 
 const Footer = () => {
   return (
-    <footer className="footer text-white pt-5 pb-3">
+    <footer className="footer text-white py-5 pb-3">
       <Container>
         <Row>
           <Col md={3}>
@@ -62,7 +62,7 @@ const Footer = () => {
         </Row>
 
         <hr className="bg-light mt-4" />
-        <p className="text-center mt-3 mb-0">
+        <p className="text-center mt-3 mb-0 py-5">
           © Copyright 2025 Urban Cruise | All Rights Reserved
         </p>
       </Container>

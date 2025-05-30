@@ -1,15 +1,14 @@
 import React from "react";
 
 function VehicleCard2({ image, title, title2, description, description2, seat, fare }) {
-
-
     return (
-
-        <div className="card h-100 vehicle-card p-2 mb-5 position-relative overflow-visible" style={{ backgroundColor: 'white' }}>
+        <div className="card h-100 vehicle-card p-2 position-relative overflow-visible" style={{ backgroundColor: 'white', }}>
             <div className="position-relative">
                 <img src={image} alt="vehicle" className="card-img-top" />
             </div>
-            <div className="card-body pb-5"> {/* Add bottom padding so content doesn't overlap with buttons */}
+
+            {/* Added extra bottom padding here */}
+            <div className="card-body pb-5">
                 <h5 className="fw-bold">{title}</h5>
                 <h5 className="fw-bold" style={{ color: '#7D7D7D' }}>{title2}</h5>
                 <p className="vehicle-description py-2">{description}</p>
@@ -27,11 +26,10 @@ function VehicleCard2({ image, title, title2, description, description2, seat, f
                 </div>
             </div>
 
-            {/* Buttons half outside */}
-            <div
-                className="d-flex justify-content-center gap-5 position-absolute px-3 w-100" style={{ bottom: '-20px' }}>
-                <button className="btn px-4" style={{ backgroundColor: '#7ED321', color: 'white' }}>BOOK NOW</button>
-                <button className="btn btn-warning px-4 text-white">READ MORE</button>
+            {/* Responsive buttons container */}
+            <div className="d-flex justify-content-center gap-2 gap-md-4 position-relative px-3 w-100"style={{ bottom: '-20px', flexWrap: 'wrap',zIndex:'1' }}>
+                <button className="btn px-4 mb-2" style={{ backgroundColor: '#7ED321', color: 'white' }}>BOOK NOW</button>
+                <button className="btn btn-warning px-4 text-white mb-2">READ MORE</button>
             </div>
         </div>
     );

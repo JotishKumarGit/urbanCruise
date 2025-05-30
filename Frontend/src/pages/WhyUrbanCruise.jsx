@@ -12,7 +12,7 @@ const WhyUrbanCruise = () => {
         <div className="container-fluid py-4" style={{ backgroundColor: '#E6FCD2' }}>
             <div className="container">
                 <div className="text-center mb-4">
-                    <h4 className="text-warning" style={{backgroundColor:''}}>WHY URBAN CRUISE</h4>
+                    <h4 className="badge fs-4" style={{backgroundColor:'#FFE6AC', color:'#F7941D', fontWeight: 'normal'}}>WHY URBAN CRUISE</h4>
                     <h2 className="fw-bold">IS THE BEST CHOICE</h2>
                     <p className="text-muted">
                         A Reliable & Trusted Brand for Bus Rental Services in India. Our Customer First Policy helps us to create Innovative Products & Services

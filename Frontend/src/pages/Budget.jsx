@@ -13,7 +13,7 @@ function Budget() {
         <>
             <div className="text-center py-5 bg-white">
                 <div className="mb-4">
-                    <span className="badge bg-warning text-dark fs-5">A CAR/SUV</span>
+                    <span className="badge fs-4" style={{backgroundColor:'#FFE6AC', color:'#F7941D', fontWeight: 'normal'}}>A CAR/SUV</span>
                 </div>
                 <h2 className="fw-bold mb-2">FOR EVERY BUDGET</h2>
                 <p className="text-muted">3 Category of CARs & SUVs to suit every budget</p>

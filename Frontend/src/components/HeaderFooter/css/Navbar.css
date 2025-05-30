@@ -6,6 +6,21 @@
     color: white;
 }
 
+/* desktop-logo */
+@media  (max-width:1245px){
+  .desktop-logo img{
+     height: 90px;
+}
+}
+
+
+
+
+
+
+
+
+
 /* This is for footer */
 .footer {
   background-color: #222;

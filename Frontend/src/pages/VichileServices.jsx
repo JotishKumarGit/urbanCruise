@@ -21,13 +21,11 @@ import ghaziabad from '../assets/Ghaziabad.webp';
 
 function VichileServices() {
 
-
-
     return (
         <>
             <Container className="text-center my-5">
                 <div className="mb-3">
-                    <span className="badge text-warning  fs-4 fw-bold" style={{backgroundColor:'#FFE6AC'}}>MOST LIKED & HIGH RATED</span>
+                    <span className="badge  fs-4" style={{backgroundColor:'#FFE6AC', color:'#F7941D', fontWeight: 'normal'}}>MOST LIKED & HIGH RATED</span>
                 </div>
                 <h2 className="fw-bold mb-5">BUS RENTAL SERVICE IN INDIA</h2>
 
@@ -62,8 +60,8 @@ function VichileServices() {
             </Container>
 
             {/*  */}
-            <div className="container text-center text-warning  fs-4 my-5">
-                <h5 style={{ backgroundColor: '#ffe0b2', display: 'inline-block', padding: '5px 15px', borderRadius: '5px' }}>
+            <div className="container text-center  my-5">
+                <h5 className='badge fs-4' style={{ backgroundColor:'#FFE6AC', color:'#F7941D', fontWeight: 'normal', display: 'inline-block', padding: '5px 15px', borderRadius: '5px' }}>
                     VEHICLES & SERVICES
                 </h5>
                 <h3 className="my-4" style={{ fontWeight: 'bold' }}>AVAILABLE IN BELOW CITIES</h3>

@@ -1,3 +1,73 @@
+/* This is for Home page sections  */
+/* Base style (for desktop and large screens) */
+.custom-caption {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    right: 30%;
+    text-align: left;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+.custom-caption h2 {
+    font-size: 4.5rem;
+    font-weight: bold;
+}
+
+.custom-caption .highlight {
+    color: orange;
+}
+
+.custom-caption .sub-heading {
+    color: #5df15d;
+    font-size: 3.5rem;
+    margin-top: 10px;
+}
+
+/* Tablet devices (768px - 991px) */
+@media screen and (max-width: 991px) {
+    .custom-caption {
+        top: 10%;
+        left: 5%;
+        right: 10%;
+        padding: 15px;
+    }
+
+    .custom-caption h2 {
+        font-size: 3rem;
+    }
+
+    .custom-caption .sub-heading {
+        font-size: 2rem;
+    }
+}
+
+/* Mobile devices (up to 767px) */
+@media screen and (max-width: 767px) {
+    .custom-caption {
+        top: 15%;
+        left: 5%;
+        right: 5%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .custom-caption h2 {
+        font-size: 2rem;
+    }
+
+    .custom-caption .sub-heading {
+        font-size: 1.2rem;
+    }
+
+    .custom-caption p {
+        font-size: 1rem;
+    }
+}
+
+
 
 /* Vichiles sections  */
 .card:hover {
@@ -58,6 +128,20 @@
   color: #f78b00; /* bold orange text */
 }
 
+/* Move dots a bit lower */
+.wedding-slider .slick-dots {
+  bottom: -50px;
+}
+
+/* Add spacing between each card */
+.wedding-slider .slick-slide > div {
+  margin: 0 10px;
+}
+
+/* Prevent content overflow */
+.wedding-slider .slick-list {
+  margin: 0 -10px;
+}
 
 /* Wedding Tabs /* Center the tabs container */
 .custom-tabs {
@@ -145,13 +229,13 @@
   border-radius: 4px;
 }
 .vehicle-description {
-  font-size: 16px;               /* Match font size from image */
-  font-weight: 400;              /* Regular weight */
-  color: #5f5f5f;                /* Bootstrap's muted gray */
-  line-height: 1.6;              /* Comfortable line spacing */
-  font-family: 'Roboto', sans-serif;  /* Optional: match the font if used */
+  font-size: 16px;           
+  font-weight: 400;          
+  color: #5f5f5f;            
+  line-height: 1.6;        
+  font-family: 'Roboto', sans-serif; 
   margin-bottom: 0;
-  white-space: pre-line;         /* Preserves line breaks if passed in description */
+  white-space: pre-line;
 }
 
 

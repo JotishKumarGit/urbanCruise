@@ -72,7 +72,7 @@ const Testimonials = () => {
     return (
         <div className="container py-5">
             <div className="text-center mb-4">
-                <span className="badge fs-4" style={{ color: '#FFE5A3', backgroundColor: '#F98C00' }}>TESTIMONIALS</span>
+                <span className="badge fs-4" style={{ backgroundColor:'#FFE6AC', color:'#F7941D', fontWeight: 'normal' }}>TESTIMONIALS</span>
                 <h2 className="fw-bold mt-2">A GALAXY OF HAPPY CUSTOMERS</h2>
             </div>
             <Swiper

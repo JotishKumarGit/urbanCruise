@@ -21,13 +21,12 @@ function AboutUs() {
                 </div>
             </div>
 
-        //
             <div className="container my-5">
                 <div className="row align-items-center">
                     {/* Left Content */}
                     <div className="col-md-6">
                         <div className="mb-3">
-                            <span className="px-3 py-1 text-warning fs-3 rounded" style={{backgroundColor:'#FFE6AC'}}>ABOUT</span>
+                            <span className="px-3 py-1 fs-4 rounded" style={{backgroundColor:'#FFE6AC',color:'#F7941D'}}>ABOUT</span>
                         </div>
                         <h2 className="fw-bold mb-3">URBAN CRUISE</h2>
                         <p style={{ color: '#5c5c5c', fontWeight: '400' }}>
@@ -41,7 +40,7 @@ function AboutUs() {
                             for a Comfortable Ride & Peace of mind. This comes with <strong>Affordable Pricing</strong> & <strong>Hassel Free Booking</strong> backed by our
                             <strong> Reliable Customer Service</strong> at every step of your journey.
                         </p>
-                        <a href="" style={{backgroundColor: "#72d100"}} className="btn btn-success px-4 py-2 mt-3">READ MORE</a>
+                        <a href="" style={{backgroundColor: "#72d100",border:"3px solid white",borderRadius:'10px'}} className="btn shadow-lg px-4 py-2 mt-3">READ MORE</a>
                     </div>
 
                     {/* Right Video */}

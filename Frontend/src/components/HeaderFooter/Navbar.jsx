@@ -1,4 +1,5 @@
-import React from "react";
+
+import { useState,useEffect } from "react";
 import logo from "/logo.png";
 import { FaPhone, FaCalendarAlt, FaBars } from "react-icons/fa";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -6,6 +7,23 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import './css/Navbar.css';
 
 function Navbar() {
+    const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsSmallScreen(window.innerWidth <= 1245);
+        };
+
+        // Initial check
+        handleResize();
+
+        // Event listener
+        window.addEventListener('resize', handleResize);
+
+        // Cleanup
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
     return (
         <>
             {/* Mobile Navbar */}
@@ -15,16 +33,29 @@ function Navbar() {
             </nav>
 
             {/* Desktop Navbar */}
-            <nav className="navbar navbar-expand-lg d-none d-lg-flex" style={{ backgroundColor: "#72d100" }}>
+            <nav className="navbar navbar-expand-lg d-none d-lg-flex" style={{ backgroundColor: "#72d100", position: 'relative', zIndex: '1' }}>
                 <div className="container-fluid d-flex justify-content-center">
                     <div className="collapse navbar-collapse d-flex align-items-center justify-content-center text-center" id="navbarNavDropdown">
                         {/* Logo */}
-                        <a className="navbar-brand mb-3" href="#"><img src={logo} alt="Logo" height="50" /></a>
-
+                        {/* <a className="navbar-brand mb-3" href="#"><img src={logo} alt="Logo" height="50" /></a> */}
+                        <div className="desktop-logo"
+                            style={{
+                                position: 'absolute',
+                                backgroundColor: '#ffffff',
+                                borderRadius: '20px',
+                                padding: '10px 20px',
+                                boxShadow: '0 4px 12px rgba(0, 0, 0, 0.15)',
+                                display: 'inline-block',
+                                marginTop: '-35px', zIndex: '1',
+                                top: '0px',
+                                left: '200px'
+                            }}>
+                            <img src={logo} alt="Logo" width={isSmallScreen ? "80" : "200"} height="100" />
+                        </div>
                         {/* Nav Links */}
-                        <ul className="navbar-nav mb-0">
+                        <ul className="navbar-nav mb-0" style={{ marginLeft: '250px' }}>
                             <li className="nav-item dropdown px-2">
-                                <a className="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" style={{ fontSize: '18px' }}>ABOUT US</a>
+                                <a className="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" style={{ fontSize: '16px' }}>ABOUT US</a>
                                 <ul className="dropdown-menu" style={{}}>
                                     <li><a className="dropdown-item" href="#">About Us</a></li>
                                     <li><a className="dropdown-item" href="#">Blog</a></li>
@@ -36,7 +67,7 @@ function Navbar() {
                             </li>
                             <p className="align-items-center" style={{ height: "35px", width: "0.1px", backgroundColor: "white" }}></p>
                             <li className="nav-item dropdown px-2">
-                                <a className="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" style={{ fontSize: '18px' }}>OUR VEHICLES</a>
+                                <a className="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" style={{ fontSize: '16px' }}>OUR VEHICLES</a>
                                 <ul className="dropdown-menu">
                                     <li><a className="dropdown-item" href="#">Car & SUVs</a></li>
                                     <li><a className="dropdown-item" href="#">Tempo Traveler</a></li>
@@ -47,7 +78,7 @@ function Navbar() {
                             </li>
                             <p className="align-items-center" style={{ height: "35px", width: "0.1px", backgroundColor: "white" }}></p>
                             <li className="nav-item dropdown px-2">
-                                <a className="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" style={{ fontSize: '18px' }}>SERVICES</a>
+                                <a className="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" style={{ fontSize: '16px' }}>SERVICES</a>
                                 <ul className="dropdown-menu">
                                     <li><a className="dropdown-item" href="#">Wedding Travel</a></li>
                                     <li><a className="dropdown-item" href="#">Corporate Travel</a></li>
@@ -57,7 +88,7 @@ function Navbar() {
                             </li>
                             <p className="align-items-center" style={{ height: "35px", width: "0.1px", backgroundColor: "white" }}></p>
                             <li className="nav-item dropdown px-2">
-                                <a className="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" style={{ fontSize: '18px' }}>INFO'S</a>
+                                <a className="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" style={{ fontSize: '16px' }}>INFO'S</a>
                                 <ul className="dropdown-menu">
                                     <li><a className="dropdown-item" href="#">FAQ</a></li>
                                     <li><a className="dropdown-item" href="#">News & Media</a></li>

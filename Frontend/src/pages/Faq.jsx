@@ -49,7 +49,7 @@ const Faq = () => {
         <div style={{ backgroundColor: "#FFECD9", padding: "50px 0" }}>
             <Container>
                 <div className="text-center mb-5">
-                    <h5 style={{ color: "#FF9C42", fontWeight: "bold" }}>FAQ’S</h5>
+                    <h5 className="badge fs-4" style={{ backgroundColor:'#FFE6AC', color:'#F7941D', fontWeight: 'normal'}}>FAQ’S</h5>
                     <h2 className="fw-bold">FREQUENTLY ASKED QUESTIONS</h2>
                 </div>
                 <Row>

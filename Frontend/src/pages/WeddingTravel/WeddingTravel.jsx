@@ -9,8 +9,8 @@ const WeddingTravel = () => {
 
 
     return (
-        <div className="container-fluid py-3" style={{ backgroundColor: '#FDEBD0' }}>
-            <div className="container mt-5" >
+        <div className="container-fluid" style={{ backgroundColor: '#FDEBD0' }}>
+            <div className="container" >
                 <div className="text-center vehicle-banner py-5">
                     <div className="d-inline-block px-3 py-2 vehicle-tag mb-3">
                         <span className="text-orange fw-bold fs-5">A VEHICLE</span>

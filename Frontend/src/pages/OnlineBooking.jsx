@@ -15,9 +15,7 @@ const OnlineBooking = () => {
                 </div>
                 {/* Right Side: Booking Info */}
                 <div className="col-md-6">
-                    <span className="badge bg-warning text-dark mb-2 px-3 py-2" style={{ fontSize: '1.1rem' }}>
-                        ONLINE BOOKING
-                    </span>
+                    <span className="badge mb-2 fs-4" style={{ backgroundColor:'#FFE6AC', color:'#F7941D', fontWeight: 'normal'}}>ONLINE BOOKING</span>
                     <h2 className="fw-bold mb-3">ONLINE BOOKING WITH URBAN CRUISE</h2>
                     <p className="text-muted">
                         Urban Cruise is a <strong>Reliable & Trusted Brand</strong> for Bus Rental Services in India.
